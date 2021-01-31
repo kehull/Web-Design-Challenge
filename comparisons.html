@@ -1,22 +1,157 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-	<title>Weather Analysis</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
+  <title>Weather Analysis</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+                        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+                        crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Latitude</a>
+    <button class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <nav class="navbar">
-            <nav class="title">Latitude</nav>
-            <ul class="list-group list-group-horizontal">
-                <li class="list-group-item"><a href="#">Plots</a></li>
-                <li class="list-group-item"><a href="comparisons.html">Comparisons</a></li>
-                <li class="list-group-item"><a href="data.html">Data</a></li>
-                </ul>
-        
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Plots</a>
+            <a class="dropdown-item" href="#">plotlink</a>
+            <a class="dropdown-item" href="#">plotlink2</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Data</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Comparison: Latitude vs X</h1>
+      <hr class="my-4">
+      <p class="lead">Click any plot to get an in-depth analysis.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="caption">
+            <h2>vs. Max Temperature</h2>
+          </div>
+          <div class="thumbnail">
+            <a href="Resources\assets\images\Fig1.png"><img src="Resources\assets\images\Fig2.png" alt="..." class="img-thumbnail"></a>
+          </div>
+        </div>
+  
+        <div class="col-md-6">
+          <div class="caption">
+            <h2>vs. Humidity</h2>
+          </div>
+            <div class="thumbnail">
+              <a href="Resources\assets\images\Fig2.png"><img src="Resources\assets\images\Fig2.png" alt="..." class="img-thumbnail"></a>
+            </div>
+          </div>
+          
+        <div class="row">
+          <div class="col-md-6">
+            <div class="caption">
+              <h2>vs. Cloudiness</h2>
+            </div>
+              <div class="thumbnail">
+                <a href="Resources\assets\images\Fig3.png"><img src="Resources\assets\images\Fig3.png" alt="..." class="img-thumbnail"></a>
+              </div>
+            </div>
+  
+        <div class="col-md-6">
+          <div class="caption">
+            <h2>vs. Wind Speed</h2>
+          </div>
+          <div class="thumbnail">
+            <a href="Resources\assets\images\Fig4.png"><img src="Resources\assets\images\Fig4.png" alt="..." class="img-thumbnail"></a>
+          </div>
+        </div>
+      </div>
+      </div></div>
+    </div>
+  </div>
+
+      
+    
+
+  </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
         <container>
         <header class="header">
             <h1>Comparison: Latitude vs X</h1>
@@ -53,4 +188,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-</html>
+</html> --> 
