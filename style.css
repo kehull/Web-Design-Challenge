@@ -22,17 +22,38 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
+  p {
+    font-size: 14px;
+    color: rgb(152,164,175);
+  }
+
   h2 {
     font-size: 20px;
+    text-decoration: none;
   }
 
   .img-thumbnail {
     border:none;
   }
 
+  #indeximg {
+    float:left;
+    margin:0px;
+  }
+
+  #vis  {
+    max-width:100%;
+    height: auto;
+  }
+
+  #activevis  {
+    border: 4px solid  rgb(74, 170, 165);
+  }
+
 .jumbotron {
   background: #fff;
   margin-top:25px;
+  display:inline-block;
 }
 
 .navbar-brand {
@@ -53,6 +74,41 @@ body {
 }
 
 .caption{
+  text-align: center;
+}
+
+.post {
+  background: #fff;
+  margin-top:25px;
+  padding:25px;
+}
+
+table {
+  font-size: 14px;
+  color: rgb(75, 75, 75);
+  margin:50px;}
+
+#T_c30c5982_6435_11eb_af4e_782b463e8419   {
+  margin-left: 40px;
+  margin-right:0px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  border-collapse: collapse;
+  border: none;
+}    
+
+#T_c30c5982_6435_11eb_af4e_782b463e8419 tbody tr:nth-child(even) {
+  background-color: #fff;
+}    
+
+#T_c30c5982_6435_11eb_af4e_782b463e8419 tbody tr:nth-child(odd) {
+  background-color: #eee;
+}    
+
+#T_c30c5982_6435_11eb_af4e_782b463e8419 td {
+  padding: .5em;
+}    
+#T_c30c5982_6435_11eb_af4e_782b463e8419 th {
+  font-size: 100%;
   text-align: center;
 }
   
